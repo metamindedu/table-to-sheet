@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>표 따오기 (Table to Sheet) — 개인정보처리방침</title>
+    <style>
+      :root { color-scheme: dark; --bg: #0b0e13; --card: #12151c; --line: rgba(255,255,255,.14); --fg: #e9edf5; --muted: #93a3ba; --accent: #ff5a2b; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.72 "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif; }
+      .wrap { max-width: 780px; margin: 0 auto; padding: 48px 22px 80px; }
+      .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+      .brand span { width: 34px; height: 34px; border-radius: 9px; background: var(--accent); display: grid; place-items: center; font-weight: 800; color: #fff; }
+      h1 { font-size: 26px; letter-spacing: -.6px; margin: 10px 0 6px; }
+      .meta { color: var(--muted); font-size: 13px; margin-bottom: 26px; }
+      h2 { font-size: 17px; margin: 34px 0 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+      p, li { color: #cfd8e6; }
+      ul { padding-left: 20px; }
+      table { width: 100%; border-collapse: collapse; margin: 10px 0 4px; font-size: 14px; }
+      th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+      th { background: rgba(255,255,255,.06); }
+      code { background: rgba(255,255,255,.08); padding: 1px 6px; border-radius: 5px; font-size: 13px; }
+      .callout { background: rgba(255,90,43,.10); border: 1px solid rgba(255,90,43,.42); border-radius: 10px; padding: 14px 16px; margin: 18px 0; }
+      a { color: #ffb39c; }
+      footer { margin-top: 44px; color: var(--muted); font-size: 12.5px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="brand"><span>표</span><strong>표 따오기 (Table to Sheet)</strong></div>
+      <h1>개인정보처리방침</h1>
+      <p class="meta">최종 업데이트 2026-11-16 · 버전 0.3.0 · Chrome 확장 프로그램</p>
+
+      <div class="callout">
+        <strong>요약:</strong> 표 따오기는 <strong>어떤 데이터도 수집·전송하지 않습니다.</strong>
+        웹페이지의 표는 사용자의 브라우저 안에서만 처리됩니다.
+      </div>
+
+      <h2>1. 처리하는 데이터</h2>
+      <table>
+        <thead><tr><th>데이터</th><th>처리 방식</th><th>보관</th></tr></thead>
+        <tbody>
+          <tr><td>웹페이지의 표 내용</td><td>확장 내부 메모리에서 감지·변환</td><td>저장하지 않음 (탭을 닫으면 사라짐)</td></tr>
+          <tr><td>내보낸 파일(CSV/XLSX/JSON/MD)</td><td>사용자가 선택한 폴더에 저장</td><td>사용자 파일 시스템</td></tr>
+          <tr><td>설정값(머리글·숫자 정리·병합셀 채우기)</td><td><code>chrome.storage.local</code></td><td>브라우저 로컬에만 저장, 외부 전송 없음</td></tr>
+          <tr><td>클립보드</td><td>사용자가 [복사]를 누를 때 표 데이터 기록</td><td>운영체제 클립보드</td></tr>
+        </tbody>
+      </table>
+
+      <h2>2. 하지 않는 것</h2>
+      <ul>
+        <li>서버·API로 데이터 전송 <strong>없음</strong></li>
+        <li>계정·로그인 <strong>없음</strong></li>
+        <li>분석 도구·광고·추적 픽셀 <strong>없음</strong></li>
+        <li>제3자 판매·공유 <strong>없음</strong></li>
+        <li>원격 코드 로드 <strong>없음</strong> (모든 코드는 확장 패키지에 포함)</li>
+      </ul>
+
+      <h2>3. 권한과 목적</h2>
+      <table>
+        <thead><tr><th>권한</th><th>목적</th></tr></thead>
+        <tbody>
+          <tr><td><code>activeTab</code></td><td>사용자가 아이콘을 누른 탭에서만 동작</td></tr>
+          <tr><td><code>scripting</code></td><td>표 감지·추출 코드를 해당 탭에 주입</td></tr>
+          <tr><td><code>storage</code></td><td>옵션 기본값 저장</td></tr>
+          <tr><td><code>downloads</code></td><td>사용자가 요청한 파일 저장</td></tr>
+          <tr><td><code>contextMenus</code></td><td>표 우클릭 → 클립보드 복사</td></tr>
+          <tr><td><code>clipboardWrite</code></td><td>클립보드 복사 폴백</td></tr>
+        </tbody>
+      </table>
+      <p>상시 접근 권한(<code>host_permissions</code>)은 요청하지 않습니다.</p>
+
+      <h2>4. 아동의 개인정보</h2>
+      <p>표 따오기는 개인정보를 수집하지 않으므로 아동의 개인정보도 수집하지 않습니다.</p>
+
+      <h2>5. 정책 변경</h2>
+      <p>정책이 바뀌면 이 페이지에 게시하고 상단의 최종 업데이트 날짜를 갱신합니다.</p>
+
+      <h2>6. 문의</h2>
+      <p>이메일: <a href="mailto:metamind@kakao.com">metamind@kakao.com</a></p>
+
+      <footer>© 2026 표 따오기 (Table to Sheet). Chrome 웹 스토어 확장 프로그램.</footer>
+    </div>
+  </body>
+</html>
