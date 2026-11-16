@@ -55,6 +55,13 @@
 - **host_permissions 없음** — 사용자가 아이콘을 누른 탭에만 스크립트를 주입합니다.
 - 네트워크 요청 0건: 표는 브라우저 메모리에서만 처리되고 어디로도 전송되지 않습니다.
   (E2E 테스트가 외부 요청 0건을 검사합니다.)
+- 개인정보처리방침: https://metamindedu.github.io/table-to-sheet/privacy.html
+
+## 링크
+
+- 소스: https://github.com/metamindedu/table-to-sheet
+- 개인정보처리방침: https://metamindedu.github.io/table-to-sheet/privacy.html
+- 문의: metamind@kakao.com
 
 ## 테스트
 

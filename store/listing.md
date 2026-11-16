@@ -14,7 +14,8 @@
 | 배포 범위 | ✅ **공개** (2026-11-16 결정) |
 | 가격 | 무료 |
 | 지원 이메일 | `metamind@kakao.com` |
-| 개인정보처리방침 URL | ⏳ GitHub Pages 게시 후 확정 |
+| 개인정보처리방침 URL | `https://metamindedu.github.io/table-to-sheet/privacy.html` |
+| 소스 저장소 | `https://github.com/metamindedu/table-to-sheet` (공개) |
 
 ## 상세 설명 (붙여넣기용)
 
@@ -53,10 +54,11 @@
 
 ■ 개인정보
 표 내용은 브라우저 메모리에서만 처리됩니다. 서버 전송·계정·추적·광고가 없습니다.
-자세한 내용: [개인정보처리방침 URL]
+자세한 내용: https://metamindedu.github.io/table-to-sheet/privacy.html
 
 ■ 문의
-버그·요청: [지원 이메일]
+버그·요청: metamind@kakao.com
+소스: https://github.com/metamindedu/table-to-sheet
 ```
 
 ## 단일 목적 (Single purpose)

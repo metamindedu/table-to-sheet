@@ -1,5 +1,7 @@
 # 표 따오기 (Table to Sheet) — 개인정보처리방침
 
+게시 URL: https://metamindedu.github.io/table-to-sheet/privacy.html
+
 최종 업데이트: 2026-11-16 · 버전 0.3.0
 
 ## 요약
