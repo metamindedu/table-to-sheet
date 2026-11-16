@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>표 따오기 — 페이지네이션 픽스처</title>
+    <style>
+      body { margin: 0; padding: 24px; font: 14px/1.6 "Malgun Gothic", system-ui, sans-serif; background: #f5f7fb; color: #1b2230; }
+      section { background: #fff; border: 1px solid #dde3ed; border-radius: 12px; padding: 14px 16px; margin: 0 0 16px; max-width: 760px; }
+      h2 { font-size: 14px; margin: 0 0 8px; color: #33415a; }
+      table { border-collapse: collapse; font-size: 13px; width: 100%; }
+      th, td { border: 1px solid #cdd6e4; padding: 6px 10px; text-align: left; }
+      th { background: #eef2f9; }
+      .pager { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+      .pager button { padding: 5px 12px; border: 1px solid #c3cddd; background: #fff; border-radius: 8px; cursor: pointer; }
+      .pager button:disabled { opacity: .45; cursor: default; }
+      .pages { color: #66748b; font-size: 12.5px; }
+      .more { margin-top: 10px; padding: 6px 14px; border: 1px solid #c3cddd; background: #fff; border-radius: 8px; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <h1> 페이지네이션 픽스처</h1>
+
+    <section id="paged">
+      <h2>1. 클라이언트 페이지네이션 (30행 · 10행/페이지)</h2>
+      <table id="t-paged">
+        <thead>
+          <tr><th>순번</th><th>이름</th><th>금액</th><th>날짜</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="pager">
+        <button class="prev" disabled>이전</button>
+        <span class="pages">1 / 3</span>
+        <button class="next" aria-label="다음 페이지">다음</button>
+      </div>
+    </section>
+
+    <section id="loadmore">
+      <h2>2. 더 보기 (5행씩 추가)</h2>
+      <table id="t-more">
+        <thead>
+          <tr><th>코드</th><th>제품</th><th>재고</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button class="more">더 보기</button>
+    </section>
+
+    <script>
+      const ROWS = Array.from({ length: 30 }, (_, i) => ({
+        no: i + 1,
+        name: `항목 ${i + 1}`,
+        amount: (1000 + i * 137).toLocaleString('en-US'),
+        date: `2026-11-${String((i % 28) + 1).padStart(2, '0')}`,
+      }));
+      const PER = 10;
+      let page = 0;
+      const tbody = document.querySelector('#t-paged tbody');
+      const nextBtn = document.querySelector('.pager .next');
+      const prevBtn = document.querySelector('.pager .prev');
+      const pagesEl = document.querySelector('.pages');
+      function render() {
+        tbody.innerHTML = ROWS.slice(page * PER, page * PER + PER)
+          .map((r) => `<tr><td>${r.no}</td><td>${r.name}</td><td>${r.amount}</td><td>${r.date}</td></tr>`)
+          .join('');
+        pagesEl.textContent = `${page + 1} / 3`;
+        prevBtn.disabled = page === 0;
+        nextBtn.disabled = page === 2;
+      }
+      nextBtn.addEventListener('click', () => {
+        if (page < 2) {
+          page += 1;
+          render();
+        }
+      });
+      prevBtn.addEventListener('click', () => {
+        if (page > 0) {
+          page -= 1;
+          render();
+        }
+      });
+      render();
+
+      // 더 보기
+      const MORE = Array.from({ length: 20 }, (_, i) => ({ code: `P-${String(i + 1).padStart(3, '0')}`, name: `제품 ${i + 1}`, stock: 10 + i * 3 }));
+      let moreCount = 0;
+      const moreBody = document.querySelector('#t-more tbody');
+      const moreBtn = document.querySelector('.more');
+      function renderMore() {
+        moreBody.innerHTML = MORE.slice(0, moreCount)
+          .map((r) => `<tr><td>${r.code}</td><td>${r.name}</td><td>${r.stock}</td></tr>`)
+          .join('');
+        moreBtn.disabled = moreCount >= MORE.length;
+        moreBtn.textContent = moreCount >= MORE.length ? '모두 불러옴' : '더 보기';
+      }
+      moreBtn.addEventListener('click', () => {
+        if (moreCount < MORE.length) {
+          moreCount = Math.min(MORE.length, moreCount + 5);
+          renderMore();
+        }
+      });
+      moreCount = 5;
+      renderMore();
+    </script>
+  </body>
+</html>

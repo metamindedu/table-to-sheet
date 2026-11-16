@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>표 따오기 — 설정</title>
+    <style>
+      :root { color-scheme: dark; --bg: #0b0e13; --card: #12151c; --line: rgba(255,255,255,.14); --fg: #e9edf5; --muted: #93a3ba; --accent: #ff5a2b; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; padding: 26px 22px 40px; background: var(--bg); color: var(--fg);
+        font: 14px/1.55 "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+      }
+      .wrap { max-width: 520px; margin: 0 auto; }
+      h1 { font-size: 19px; margin: 0 0 4px; letter-spacing: -.3px; }
+      .sub { color: var(--muted); font-size: 13px; margin: 0 0 22px; }
+      .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 14px; }
+      .card h2 { font-size: 13px; margin: 0 0 12px; color: #fff; }
+      .check { display: flex; align-items: center; gap: 8px; margin: 9px 0; cursor: pointer; }
+      input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--accent); }
+      .hint { color: var(--muted); font-size: 12.5px; margin: 8px 0 0; }
+      .actions { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+      button {
+        font: inherit; font-weight: 700; cursor: pointer; border-radius: 9px;
+        border: 1px solid var(--accent); background: var(--accent); color: #fff; padding: 8px 16px;
+      }
+      button.ghost { background: transparent; border-color: var(--line); color: var(--fg); }
+      #saved { color: #4ade80; font-weight: 700; font-size: 13px; opacity: 0; transition: opacity .15s; }
+      #saved.on { opacity: 1; }
+      kbd { font: inherit; font-size: 12px; font-weight: 700; padding: 2px 7px; border-radius: 6px; background: rgba(255,255,255,.09); border: 1px solid var(--line); }
+      ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); font-size: 12.5px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>표 따오기</h1>
+      <p class="sub">웹페이지의 표를 골라 엑셀·CSV·클립보드로 내보냅니다. 모든 처리는 브라우저 안에서만 이루어집니다.</p>
+
+      <div class="card">
+        <h2>기본 동작</h2>
+        <label class="check"><input type="checkbox" id="defaultHeader" /> 첫 행을 머리글로 사용</label>
+        <label class="check"><input type="checkbox" id="defaultFill" /> 병합셀 값을 모든 칸에 채우기</label>
+        <label class="check"><input type="checkbox" id="defaultNumbers" /> 숫자·날짜 서식 자동 정리 (1,420 → 1420)</label>
+        <p class="hint">팝업에서 언제든 변경할 수 있습니다. 여기 설정은 기본값으로만 쓰입니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>사용 팁</h2>
+        <ul>
+          <li>표가 감지되지 않으면 표 위에서 <b>우클릭 → 표 따오기</b>로 복사할 수 있습니다.</li>
+          <li>복사한 데이터는 Excel/Google Sheets에 <kbd>Ctrl</kbd>+<kbd>V</kbd>로 붙여넣으면 표가 유지됩니다.</li>
+          <li>이미지 속 표는 <b>이미지 텍스트 캡처</b> 확장으로 OCR한 뒤 붙여넣으세요.</li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <button id="save">설정 저장</button>
+        <button id="reset" class="ghost">기본값</button>
+        <span id="saved">저장됨</span>
+      </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

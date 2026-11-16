@@ -1,0 +1,19 @@
+{
+  "name": "table-to-sheet",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome MV3 확장: 웹페이지 표를 Excel/CSV/클립보드로 (전부 무료, 전부 로컬)",
+  "scripts": {
+    "icons": "python tools/make-icons.py",
+    "test": "node test/core.test.mjs",
+    "test:e2e": "node test/e2e.test.mjs",
+    "test:perf": "node test/perf.mjs",
+    "shots": "node tools/shots.mjs",
+    "pack": "node scripts/pack-zip.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0",
+    "xlsx": "^0.18.5"
+  }
+}

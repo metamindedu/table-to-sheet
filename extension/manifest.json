@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "표 따오기 (Table to Sheet)",
+  "version": "0.3.0",
+  "description": "웹페이지 표를 병합셀·숫자까지 살려 Excel/CSV/클립보드로. 전부 무료, 전부 로컬.",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "표 따오기",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": { "service_worker": "background.js" },
+  "permissions": ["activeTab", "scripting", "storage", "downloads", "contextMenus", "clipboardWrite"],
+  "options_ui": { "page": "options/options.html", "open_in_tab": true }
+}

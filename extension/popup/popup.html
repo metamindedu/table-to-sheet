@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>표 따오기</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <img src="../icons/icon-32.png" alt="" width="20" height="20" />
+        <strong>표 따오기</strong>
+        <span id="countBadge" class="badge hidden"></span>
+      </div>
+      <button id="rescan" class="icon" title="다시 감지">↻</button>
+    </header>
+
+    <main>
+      <section id="listView">
+        <p id="hint" class="hint">표를 찾는 중…</p>
+        <ul id="tableList" class="list"></ul>
+        <div id="empty" class="empty hidden">
+          <p><strong>이 페이지에서 표를 찾지 못했습니다.</strong></p>
+          <p class="muted">
+            표 위에서 <b>우클릭 → 표 따오기</b>로 시도해 보세요.<br />
+            이미지 속 표라면 <b>이미지 텍스트 캡처</b> 확장을 사용하세요.
+          </p>
+        </div>
+      </section>
+
+      <section id="detailView" class="hidden">
+        <div class="detail-head">
+          <button id="back" class="ghost">← 목록</button>
+          <span id="detailTitle" class="title"></span>
+        </div>
+        <div class="colbar">
+          <span class="colbar-label">열</span>
+          <div class="chips" id="colChips"></div>
+          <button id="colReset" class="ghost tiny hidden">전체</button>
+        </div>
+        <div class="preview-wrap">
+          <table id="preview" class="preview"></table>
+        </div>
+        <div class="options">
+          <label><input type="checkbox" id="optHeader" checked /> 첫 행을 머리글로</label>
+          <label><input type="checkbox" id="optNumbers" /> 숫자·날짜 정리</label>
+          <label><input type="checkbox" id="optFill" checked /> 병합셀 값 채우기</label>
+        </div>
+        <div class="collect-row">
+          <button id="collect" class="ghost">⟳ 다음 페이지까지 수집</button>
+          <span class="muted tiny">페이지네이션·더 보기 표</span>
+        </div>
+        <div class="actions">
+          <button id="copy" class="primary">복사 (Excel 붙여넣기)</button>
+          <button id="excel">Excel</button>
+          <button id="csv">CSV</button>
+          <button id="json">JSON</button>
+          <button id="md">MD</button>
+        </div>
+        <p id="status" class="status"></p>
+      </section>
+    </main>
+
+    <footer>
+      <span class="muted">100% 로컬 · 서버 전송 없음 · 무료</span>
+    </footer>
+
+    <script src="../content/table-core.js"></script>
+    <script src="../content/xlsx.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

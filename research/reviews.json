@@ -1,0 +1,297 @@
+[
+  {
+    "id": "iebpjdmgckacbodjpijphcplhebcmeop",
+    "slug": "table-capture",
+    "name": "Table Capture",
+    "users": "200K",
+    "rating": 4.1,
+    "count": 17,
+    "reviews": [
+      {
+        "author": "Renato Dinhani",
+        "stars": 1,
+        "text": "Moved *all* useful features behind the paid subscription. It is ok to monetize your software, but it killed it is purpose in the free version."
+      },
+      {
+        "author": "Алексей Б",
+        "stars": 1,
+        "text": "Крайне много ограничений. Даже одну таблицу не удалось скачать, так-что лучше попробовать другие варианты"
+      },
+      {
+        "author": "Nate Hermes",
+        "stars": 1,
+        "text": "Wasted my time.  Makes you pay for any decent sized download.  Look elsewhere."
+      },
+      {
+        "author": "Alexey Karpin",
+        "stars": 1,
+        "text": "Выделяет лишь название первого столбца, не копируя содержимое"
+      },
+      {
+        "author": "Josiah",
+        "stars": 1,
+        "text": "Wasted my time. You have to pay to use this extension."
+      },
+      {
+        "author": "Lepo",
+        "stars": 1,
+        "text": "Requires payment for basic usage."
+      },
+      {
+        "author": "-",
+        "stars": 1,
+        "text": "cannot export more than 250 rows..."
+      },
+      {
+        "author": "Sloan Haywood",
+        "stars": 1,
+        "text": "Needing a subscription to copy as Markdown is lame. It's not like that requires a backend to do the processing, so there's no continuous operating cost associated with that feature."
+      },
+      {
+        "author": "Nerea Azanza",
+        "stars": 1,
+        "text": "Not able to copy numerical data properly. Something reading 1,420 on the source page ends up exported as 1,42 into Google Sheets. Bummer!!"
+      },
+      {
+        "author": "Tuan ZionViet Zion",
+        "stars": 1,
+        "text": "not good"
+      },
+      {
+        "author": "Shawn Salim",
+        "stars": 5,
+        "text": "It works exactly as I expected it to. In fact, It actually works better. I expected to have to do some \"manual labor\" to copy tables to Google Sheets but its super easy to use. Highly recommend!"
+      },
+      {
+        "author": "Juraj Ostojić",
+        "stars": 5,
+        "text": "Useful tool"
+      },
+      {
+        "author": "Chandradip Kabiraj",
+        "stars": 5,
+        "text": "Absolutely Amazing Tool."
+      },
+      {
+        "author": "Wes Button",
+        "stars": 5,
+        "text": "This is a fantastic extension that really helps me set up extracting data from client sites that I don't have the best access to. It's helped me with tons of projects."
+      },
+      {
+        "author": "winnie ouyang",
+        "stars": 5,
+        "text": "this is really great!"
+      },
+      {
+        "author": "Brett Osinski",
+        "stars": 5,
+        "text": "I needed to export my contact list from a previous phone provider that did not allow the feature. I used the app and worked as needed. Had a few questions along the way and George was extremely helpful and walked me through it. Even jumped on a quick Zoom call with me.  Awesome guy and great service. Highly recommend it."
+      },
+      {
+        "author": "Serhat Ugur",
+        "stars": 5,
+        "text": "I’ve tried every extension on the market, and TableCapture is easily the cleanest. Using it daily for a long time, and it remains consistent across all browsers, including Chrome, Firefox, and Opera. The developer, George is also accessible at any time and responds my emails quickly."
+      }
+    ]
+  },
+  {
+    "id": "bmmhahnhjkhgephgblidkpoidfkhchnk",
+    "slug": "table-capture-tabular-data-to-spread",
+    "name": "Table Capture - Tabular Data",
+    "users": "10K",
+    "rating": 3.5,
+    "count": 23,
+    "reviews": [
+      {
+        "author": "Ma aero",
+        "stars": 1,
+        "text": "完全無用"
+      },
+      {
+        "author": "Eduardo Lima",
+        "stars": 1,
+        "text": "serviço é pago, não avisam de imediato fazem você perder tempo e descobre isso no final"
+      },
+      {
+        "author": "Benjamin Hull",
+        "stars": 1,
+        "text": "nothing happend, neither i clicked the Capture to Extract Spreadsheet from Web Page nor right click on website \"capture xxx\""
+      },
+      {
+        "author": "Laura Donovan",
+        "stars": 1,
+        "text": "Doesnt do anything when I say capture"
+      },
+      {
+        "author": "Felipe V. Rigo",
+        "stars": 1,
+        "text": "Péssimo, ela quer tirar um print, quer q vc copiei e salve a imagem e depois faça upload num site deles. Nada automatizado e nada prático. Extensão para fazer print tem várias outras melhoras, assim como sites de OCR."
+      },
+      {
+        "author": "Ken Chapman",
+        "stars": 1,
+        "text": "Doesn't work. I follow the instruction to open the extension (select the 1st option which isn't mentioned) and it is supposed to let you select a table on the website but it does nothing. I've tried highlighting the table first and it still does nothing. \nRead the other reviews - all but one sound like generic bot reviews that were posted around the same time. Don't waste your time."
+      },
+      {
+        "author": "Jacob Reddicks",
+        "stars": 2,
+        "text": "The description is misleading. The only capture it does is by taking an image and analyzing it. Also, to actually use it you need to pay a subscription.\nOverall disappointed as I was expecting it to pull information directly from the website."
+      },
+      {
+        "author": "Adela Filipescu",
+        "stars": 5,
+        "text": "amazing"
+      },
+      {
+        "author": "Vittorio Pavone",
+        "stars": 5,
+        "text": "nice"
+      },
+      {
+        "author": "Juan R.",
+        "stars": 1,
+        "text": "Una tomadura de pelo. La desinstalo ya mismo"
+      },
+      {
+        "author": "ming Moo",
+        "stars": 2,
+        "text": "拡張機能自体の機能は性能の悪いページ画像キャプチャ。ウィンドウモードで表を選択したらスクロールバーまでキャプチャされた。そうしてコピーした表画像を自社の画像解析サイトにアップロードしてcsv等に変換する仕組み。\n通常のHTML上の表を取り込みたいだけなら似て非なる「Table Capture」を使った方がいいだろう。あちらは一瞬で正確なものを取り込んでくれる。"
+      },
+      {
+        "author": "Shaun P",
+        "stars": 2,
+        "text": "Unless the tables were pretty simple, it's unclear why this extension is rated so highly. 1) it's basically a web image capture and extraction program, not an HTML table capture program, 2) because the content needs to fit on the screen, for large tables, you will need to zoom out, which limits the size of table you can capture, 3) the captured image is sent to an online extraction app, which gives you one free extraction (i.e. it's not free after the first), and 4) the online extraction app ... 더보기"
+      },
+      {
+        "author": "A K",
+        "stars": 3,
+        "text": "Программа позволяет выделить видимую на экране часть, а далее используется сервис онлайн распознавания текста (OCR). Но не поддерживает русский язык.\nЕсли таблица требует пролистывания, то данное приложение этого не умеет, т.е. придётся распознавать её по частям."
+      },
+      {
+        "author": "TARUN TOMAR",
+        "stars": 1,
+        "text": "Waste of time. it is just a screen capture extension. You cannot scroll down to bottom to extract the whole table. just try to capture what shown on screen."
+      },
+      {
+        "author": "Роман Чернинц",
+        "stars": 1,
+        "text": "Это платное расширение, бесплатно ничего работать не будет. Об этом надо предупреждать сразу перед установкой"
+      },
+      {
+        "author": "Ariano Banfield",
+        "stars": 5,
+        "text": "Good, This makes the job easier."
+      },
+      {
+        "author": "Agnaldo Silva",
+        "stars": 5,
+        "text": "Excelente ferramenta!"
+      },
+      {
+        "author": "Alida Jones",
+        "stars": 5,
+        "text": "It helps me get through work quickly and I give it five stars!"
+      },
+      {
+        "author": "Lin Blacky",
+        "stars": 5,
+        "text": "very easy to use and time saving"
+      },
+      {
+        "author": "HaiLun Lusi",
+        "stars": 5,
+        "text": "I am happy to find it ,It is eassy to Use"
+      },
+      {
+        "author": "Mikhal",
+        "stars": 5,
+        "text": "I love these apps, it's very helpful for work."
+      },
+      {
+        "author": "Beckie Lamark",
+        "stars": 5,
+        "text": "Great, five stars!"
+      },
+      {
+        "author": "Lin Blue",
+        "stars": 5,
+        "text": "Very good"
+      }
+    ]
+  },
+  {
+    "id": "mifafadkkfkdkgcfhkfeioapmnfliopp",
+    "slug": "table-to-excel-csv-capture",
+    "name": "Table to Excel, CSV Capture",
+    "users": "677",
+    "rating": 4.3,
+    "count": 3,
+    "reviews": [
+      {
+        "author": "Danial Zakeri",
+        "stars": 1,
+        "text": "not worked."
+      },
+      {
+        "author": "Abdulrahman Albasheer",
+        "stars": 5,
+        "text": "أداة ممتازة"
+      },
+      {
+        "author": "ASHWIN RAJ",
+        "stars": 5,
+        "text": "Very helpful and easy to use"
+      }
+    ]
+  },
+  {
+    "id": "legefalillciaiighbbkdojbjahhjjfa",
+    "slug": "table-exporter-universal-scraper",
+    "name": "Table Exporter & Universal Scraper",
+    "users": "1K",
+    "rating": 4.5,
+    "count": 3,
+    "reviews": [
+      {
+        "author": "Abdullah AbuHaimed",
+        "stars": 2,
+        "text": "Not work with all table types."
+      },
+      {
+        "author": "Aditya Jeppu",
+        "stars": 5,
+        "text": "A simple extension to make your life easier!"
+      },
+      {
+        "author": "KIRAN PARADIYA",
+        "stars": 5,
+        "text": "one of best tool please use it."
+      }
+    ]
+  },
+  {
+    "id": "hmehfffhilmehojjlkoogagjmkdoddlk",
+    "slug": "table-capture-extractor",
+    "name": "Table Capture & Extractor",
+    "users": "327",
+    "rating": 3,
+    "count": 3,
+    "reviews": [
+      {
+        "author": "Daniel",
+        "stars": 1,
+        "text": "I find no purpose in using this app. For instance, suppose there’s a table displaying 10 out of 100 entries, followed by a link to download the file to view the remaining 90 entries. In that case, you can’t actually see the entire 100 entries. You would still need to download the file to access the full content.…"
+      },
+      {
+        "author": "Asifur Rahman",
+        "stars": 5,
+        "text": "uploading sensitive internal reports or client spreadsheets to online table converters feels super unsafe.this tool handles all table detection,editing,and file generation locally inside chrome without asking for accounts or paywalls.it never touches external networks unless you deliberately load a remote pdf link.a clean,trustworthy utility for everyday browser exports."
+      },
+      {
+        "author": "Plamen Petkov",
+        "stars": 5,
+        "text": "Tried a couple other options, while some had decent outcome for detection and table formatting also had features behind paywalls, this works great and is 100% all features free"
+      }
+    ]
+  }
+]
