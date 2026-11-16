@@ -105,7 +105,18 @@
 
 ## 남은 준비물 (사람이 해야 할 것)
 
-1. **개인정보처리방침 URL** — GitHub Pages 게시 후 확정 (진행 중).
+1. ✅ **개인정보처리방침 URL** — https://metamindedu.github.io/table-to-sheet/privacy.html (HTTP 200 확인)
 2. ✅ **지원 이메일** — `metamind@kakao.com`
 3. ✅ **배포 범위** — 공개
-4. 제출 후 심사 대기(보통 수일). 게시(publish)는 명시 승인 후에만 실행.
+4. ✅ **제출 완료** — 2026-11-16, 상태 `검토 대기 중`, `검토 통과 후 자동 게시` 켜짐
+
+## 제출 기록
+
+| 항목 | 값 |
+|---|---|
+| 항목 ID | `iclloajfjkfemefocpabhhdndohmjice` |
+| 버전 | 0.3.0 (`dist/table-to-sheet-0.3.0.zip`) |
+| 제출 시각 | 2026-11-16 |
+| 상태 | 검토 대기 중 (게시 전) |
+| 자동 게시 | 켜짐 (승인 시 공개) |
+| 게시자 한도 | 2/3 사용 |
